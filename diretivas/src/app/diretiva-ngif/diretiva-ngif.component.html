@@ -1,0 +1,30 @@
+<h5>*ngIf="expression"</h5>
+
+<div *ngIf="cursos.length > 0">
+  Lista de cursos
+</div>
+
+<div *ngIf="cursos.length == 0">
+  não existem cursos para serem listados
+</div>
+
+<div *ngIf="mostrarCursos">
+  Lista de cursos boolean
+</div>
+
+<div *ngIf="!mostrarCursos">
+  não existem cursos para serem listados boolean
+</div>
+
+<br><br>
+<button (click) = "mostrarCursosFunc()"> Mostrar Cursos</button>
+
+<h5>hidden como alternativa</h5>
+
+<div [hidden]="!mostrarCursos">
+  Lista de cursos boolean
+</div>
+
+<div [hidden]="mostrarCursos">
+  não existem cursos para serem listados boolean
+</div>

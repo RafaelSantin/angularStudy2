@@ -1,0 +1,28 @@
+<p appFundoAmarelo>
+  texto com fundo amarelo
+</p>
+
+<p appHighlightMouse>
+  texto com highlight mouse
+</p>
+
+<!-- <p appHighlight [defaultColor] = "'grey'" [hightLightColor] = "'green'">
+  texto com cores customizadas
+</p> -->
+
+<p [appHighlight]="'green'" [defaultColor]="'grey'" >
+  texto com cores customizadas
+</p>
+
+
+
+<div *ngIf="mostrarCursos">
+  Lista de cursos boolean com ng-else
+</div>
+
+<div *ngElse="mostrarCursos">
+  não existem cursos para serem listados boolean com ng-else
+</div>
+
+<br><br>
+<button (click) = "mostrarCursosFunc()"> Mostrar Cursos</button>
